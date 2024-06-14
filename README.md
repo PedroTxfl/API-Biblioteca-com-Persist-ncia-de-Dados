@@ -22,23 +22,11 @@ Este projeto consiste no desenvolvimento de APIs RESTful com persistência de da
 
 ## Instalação e Uso
 
-1. Clone o repositório:
-   ```sh
-   git clone https://github.com/pedrotxsenac/API_biblioteca_Com_BD.git
-   ```
-2. Navegue até o diretório do projeto:
-   ```sh
-   cd API_biblioteca_Com_BD
-   ```
+1. Clone o repositório.
+2. Navegue até o diretório do projeto.
 3. Instale as dependências.
-4. Configure o banco de dados no arquivo `config.js`.
-5. Crie as tabelas no banco de dados utilizando o arquivo `schema.sql`:
-   ```sh
-   psql -U seu_usuario -d seu_banco_de_dados -f schema.sql
-   ```
-6. Execute a aplicação:
-   ```sh
-   npm start
-   ```
+4. Configure o banco de dados.
+5. Execute a aplicação.
+
 
 
