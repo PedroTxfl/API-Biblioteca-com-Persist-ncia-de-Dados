@@ -1,0 +1,29 @@
+CREATE TABLE livros (
+  id SERIAL PRIMARY KEY,
+  isbn VARCHAR(20) NOT NULL,
+  nome VARCHAR(100) NOT NULL,
+  autor VARCHAR(100) NOT NULL,
+  editora VARCHAR(100) NOT NULL,
+  anoPublicacao INTEGER NOT NULL,
+  retirado BOOLEAN DEFAULT FALSE,
+  idCliente INTEGER,
+  dataRetirada TIMESTAMP,
+  dataEntrega TIMESTAMP,
+  diasAtraso INTEGER
+);
+
+
+CREATE TABLE autores (
+  id SERIAL PRIMARY KEY,
+  nome VARCHAR(100) NOT NULL,
+  paisOrigem VARCHAR(100) NOT NULL
+);
+
+
+CREATE TABLE clientes (
+  id SERIAL PRIMARY KEY,
+  matricula VARCHAR(20) NOT NULL,
+  nome VARCHAR(100) NOT NULL,
+  telefone VARCHAR(20) NOT NULL,
+  livrosRetirados INTEGER NOT NULL DEFAULT 0
+);
